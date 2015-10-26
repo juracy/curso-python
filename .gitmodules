@@ -1,0 +1,3 @@
+[submodule "plugins/externalcode"]
+	path = plugins/externalcode
+	url = https://github.com/pquerna/reveal.js-plugin-externalcode.git
