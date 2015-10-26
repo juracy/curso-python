@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Curso de Python</title>
+
+        <meta name="description" content="Checklist">
+        <meta name="author" content="Juracy Filho">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="bower_components/reveal.js/css/theme/night.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css">
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                  <h2>Curso de Python &dash; Índice</h2>
+
+                  <ul style="list-style: none">
+                    <li>Python... é uma cobra?</li>
+                    <li>Mas, morde ?</li>
+                    <li>Zen of Python</li>
+                    <li>Interpretador Python</li>
+                    <li>Ofidioglossia</li>
+                    <li>Ninho de cobras</li>
+                    <li>Conceitos funcionais</li>
+                    <li>OO.....__</li>
+                    <li>Entra filhote, sai cobra criada</li>
+                    <li>Exceções</li>
+                    <li>Apêndice A - Exemplos possíveis</li>
+                    <li>Apêndice B - Fun</li>
+                    <li>Apêndice C - Além da linguagem</li>
+                    <li>Apêndice D - Links, Documentação e materiais diversos</li>
+                  </ul>
+                </section>
+
+                <section>
+                    <h2>Python... é uma cobra?</h2>
+
+                    <div style="text-align: justify">
+                      <p>Python é uma linguagem de programação de alto nível, interpretada, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.
+                      Foi lançada por Guido van Rossum em 1991. Atualmente possui um modelo de desenvolvimento comunitário, aberto e gerenciado pela organização
+                      sem fins lucrativos Python Software Foundation.
+
+                      <p>O nome Python teve a sua origem no grupo humorístico britânico Monty Python, criador do programa Monty Python's Flying Circus,
+                      embora muitas pessoas façam associação com o réptil do mesmo nome.
+
+                      <p>Posteriormente a cobra começou a ser adotada como logo da linguagem.
+                    </div>
+
+                    <p style="text-align: right">Referência: <a href="https://pt.wikipedia.org/wiki/Python">Wikipedia</a>
+                </section>
+
+                <section>
+                    <h2>Mas, morde ?</h2>
+
+                    <div style="text-align: justify">
+                      <p>Comparada com outras linguagens de mercado, Python tem se sobressaído pela simplicidade, já sendo adotado por diversas universidades pelo mundo
+                      como primeira linguagem em diversos cursos de TI.
+
+                      <p><strong>Python é provavelmente a linguagem mais usada no mundo por não programadores</strong>
+
+                      <p>Outro fato relevante sobre esta simplicidade se dá pela sua filosofia básica: Zen of Python
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Zen of Python</h2>
+
+                    <ul>
+                        <li>Beautiful is better than ugly.</li>
+                        <li class="fragment">Explicit is better than implicit.</li>
+                        <li class="fragment">Simple is better than complex.</li>
+                        <li class="fragment">Complex is better than complicated.</li>
+                        <li class="fragment">Flat is better than nested.</li>
+                        <li class="fragment">Sparse is better than dense.</li>
+                        <li class="fragment">Readability counts.</li>
+                        <li class="fragment">Special cases aren't special enough to break the rules.</li>
+                        <li class="fragment">Although practicality beats purity.</li>
+                        <li class="fragment">Errors should never pass silently.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Zen of Python</h2>
+
+                    <ul>
+                        <li class="fragment">Unless explicitly silenced.</li>
+                        <li class="fragment">In the face of ambiguity, refuse the temptation to guess.</li>
+                        <li class="fragment">There should be one-- and preferably only one --obvious way to do it.</li>
+                        <li class="fragment">Although that way may not be obvious at first unless you're Dutch.</li>
+                        <li class="fragment">Now is better than never.</li>
+                        <li class="fragment">Although never is often better than <strong>right</strong> now.</li>
+                        <li class="fragment">If the implementation is hard to explain, it's a bad idea.</li>
+                        <li class="fragment">If the implementation is easy to explain, it may be a good idea.</li>
+                        <li class="fragment">Namespaces are one honking great idea -- let's do more of those!</li>
+                        <li class="fragment"><a href="http://hacktoon.com/log/2015/programming-comics-3/">Quadrinização do Zen of Python (em português)</a></li>
+                    </ul>
+                    <p style="text-align: right">import this</a>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Interpretador Python</h2>
+                        <ul>
+                            <li>Vários interpretadores/compiladores/VMs: CPython, IronPython, Jython, pypy, Rpython, etc</li>
+                            <li class="fragment">Utilizar CPython (sugestão ipython)</li>
+                            <li class="fragment">Vantagens de ter um interpretador interativo</li>
+                            <li class="fragment">Interpretador &times; VMs &times; Compiladores</li>
+                            <!-- dir -->
+                            <li class="fragment">Builtins</li>
+                            <li class="fragment">IO Básico: print, raw_input</li>
+                            <li class="fragment">Alo mundo</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Alo Mundo</h2>
+
+                        <pre><code data-trim>
+                            print('Alo Mundo')
+                        </code></pre>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Ofidioglossia</h2>
+
+                    <ul>
+                        <li>Variáveis: tipadas forte e dinamicamente</li>
+                        <li class="fragment">Constantes ... não existem</li>
+                        <li class="fragment">Braceless: indentação é essencial</li>
+                        <li class="fragment">Tudo é objeto ... inclusive funções</li>
+                        <li class="fragment">Tipos básicos: inteiros, inteiros longos, complexos, strings, bytes, floats, Booleans</li>
+                        <li class="fragment">Qualquer objeto pode ser avaliado em uma expressão booleana</li>
+                        <li class="fragment">Operadores básicos e sua correlação com os métodos</li>
+                        <li class="fragment">Mutáveis e Imutáveis</li>
+                        <!-- global keyword, clousure -->
+                        <li class="fragment">Escopo das variáveis</li>
+                        <li class="fragment">Explicar listas, tuplas, sets e dicionários, slicing</li>
+                        <!-- , else, break, continue -->
+                        <li class="fragment">Construções básicas: if, for, while</li>
+                        <li class="fragment">Operador ternário</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Ninho de cobras</h2>
+
+                    <ul>
+                        <li>Precisamos de um editor, não necessariamente uma IDE</li>
+                        <li class="fragment">Encoding e o shebang</li>
+                        <li class="fragment">Indentação, PEP-8</li>
+                        <li class="fragment">Como executar os programas</li>
+                        <li class="fragment">Packages, Modulos, Imports ...</li>
+                        <li class="fragment">Funções: def, pass, lambda</li>
+                        <li class="fragment">Parâmetros opcionais, dinâmicos, nomeados, default com mutáveis</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Conceitos funcionais</h2>
+
+                    <ul>
+                        <li>map, filter, reduce</li>
+                        <li class="fragment">List comprehension (listas, tuplas e dicionários)</li>
+                        <li class="fragment">Outras funções de agregação</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>OO.....__</h2>
+
+                    <ul>
+                        <li>Classe e métodos, herança, polimorfismo, herança múltipla, mixins, encapsulamento</li>
+                        <li class="fragment">Método de classe e estáticos</li>
+                        <li class="fragment">Self... por que explícito é melhor que implícito</li>
+                        <li class="fragment">privado ?? protegido ?? Overrated !</li>
+                        <li class="fragment">Cadê os gets e sets ??</li>
+                        <li class="fragment">Não temos sobrecarga... não é necessário</li>
+                        <li class="fragment">Não temos generic... Python é naturalmente generic</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Entra filhote, sai cobra criada</h2>
+
+                    <ul>
+                        <li>open, file object</li>
+                        <li class="fragment">read, readline, iterators</li>
+                        <li class="fragment">write</li>
+                        <li class="fragment">close</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Exceções</h2>
+
+                    <ul>
+                        <li>Exceções são classes</li>
+                        <li class="fragment">try...except...finally</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Obrigado !</h2>
+                    <p>Juracy Filho</p>
+                </section>
+
+                <section>
+                  <section>
+                      <h2>Apêndice A - Exemplos possíveis</h2>
+
+                      <ul>
+                        <li>Equação de segundo grau</li>
+                        <li class="fragment">Fatorial</li>
+                        <li class="fragment">Fibonacci</li>
+                        <li class="fragment">Ler 4 notas do teclado e mostrar todas as notas e a média na tela</li>
+                        <li class="fragment"><a href="http://wiki.python.org.br/ListaDeExercicios">Lista de Exercícios</a></li>
+                      </ul>
+                  </section>
+                  <section>
+                      <h2>Equação de Segundo Grau</h2>
+
+                      <pre><code data-code="./exemplos/equacao.py" data-trim></code></pre>
+                  </section>
+                  <section>
+                      <h2>Fatorial</h2>
+
+                      <pre><code data-code="./exemplos/fatorial.py" data-trim></code></pre>
+                  </section>
+                  <section>
+                      <h2>Fibonacci</h2>
+
+                      <pre><code data-code="./exemplos/fibonacci.py" data-trim></code></pre>
+                  </section>
+                </section>
+
+                <section>
+                    <h2>Apêndice B - Fun</h2>
+
+                    <ul>
+                      <li>a,b = 2,3</li>
+                      <li class="fragment">a,b = b,a</li>
+                      <li class="fragment">2 < x < 4</li>
+                      <li class="fragment">Baterias inclusas</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Apêndice C - Além da linguagem</h2>
+
+                    <ul>
+                      <li>Django, Zope, Plone, ZODB, Turbogears</li>
+                      <li>Twister, Tornado</li>
+                      <li>Kivy</li>
+                      <li>PyQT, PyGObject</li>
+                      <li>PyGame, Cocos2d, Panda3D</li>
+                      <li>NumPy, BioPython, SciPy</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Apêndice D - Links, Documentação e materiais diversos</h2>
+
+                    <ul>
+                      <li><a href="https://github.com/vinta/awesome-python">Awesome Python</a></li>
+                      <li><a href="http://wiki.python.org.br/DocumentacaoPython">Documentos diversos</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+        <script src="bower_components/reveal.js/js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Parallax scrolling
+                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal.js/reveal-parallax-1.jpg',
+                // parallaxBackgroundSize: '2100px 900px',
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugins/externalcode/externalcode.js', condition: function() { return !!document.querySelector( '[data-code]' ); } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
