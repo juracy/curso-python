@@ -28,7 +28,11 @@
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
                 <section>
-                  <h2>Curso de Python &dash; Índice</h2>
+                  <h2>Curso de Python</h2>
+                </section>
+
+                <section>
+                  <h2>Índice</h2>
 
                   <ul style="list-style: none">
                     <li>Python... é uma cobra?</li>
@@ -41,15 +45,15 @@
                     <li>OO.....__</li>
                     <li>Entra filhote, sai cobra criada</li>
                     <li>Exceções</li>
-                    <li>Apêndice A - Exemplos possíveis</li>
-                    <li>Apêndice B - Fun</li>
+                    <li>Apêndice A - Alguns exemplos</li>
+                    <li>Apêndice B - Just for Fun</li>
                     <li>Apêndice C - Além da linguagem</li>
-                    <li>Apêndice D - Links, Documentação e materiais diversos</li>
+                    <li>Apêndice D - Melhorar a Ofidioglossia</li>
                   </ul>
                 </section>
 
                 <section>
-                    <h2>Python... é uma cobra?</h2>
+                    <h2>O que é Python... uma cobra?</h2>
 
                     <div style="text-align: justify">
                       <p>Python é uma linguagem de programação de alto nível, interpretada, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.
@@ -141,7 +145,8 @@
 
                     <ul>
                         <li>Variáveis: tipadas forte e dinamicamente</li>
-                        <li class="fragment">Constantes ... não existem</li>
+                        <li class="fragment">Garbage Collector</li>
+                        <li class="fragment">Constantes ... inexistentes</li>
                         <li class="fragment">Braceless: indentação é essencial</li>
                         <li class="fragment">Tudo é objeto ... inclusive funções</li>
                         <li class="fragment">Tipos básicos: inteiros, inteiros longos, complexos, strings, bytes, floats, Booleans</li>
@@ -182,17 +187,30 @@
                 </section>
 
                 <section>
-                    <h2>OO.....__</h2>
+                  <section>
+                      <h2>OO.....__</h2>
 
-                    <ul>
-                        <li>Classe e métodos, herança, polimorfismo, herança múltipla, mixins, encapsulamento</li>
-                        <li class="fragment">Método de classe e estáticos</li>
-                        <li class="fragment">Self... por que explícito é melhor que implícito</li>
-                        <li class="fragment">privado ?? protegido ?? Overrated !</li>
-                        <li class="fragment">Cadê os gets e sets ??</li>
-                        <li class="fragment">Não temos sobrecarga... não é necessário</li>
-                        <li class="fragment">Não temos generic... Python é naturalmente generic</li>
-                    </ul>
+                      <ul>
+                          <li>Classe e métodos, herança, polimorfismo, herança múltipla, mixins, encapsulamento</li>
+                          <li class="fragment">__init__</li>
+                          <li class="fragment">Método de classe e estáticos</li>
+                          <li class="fragment">Self... por que explícito é melhor que implícito</li>
+                          <li class="fragment">privado ?? protegido ?? Overrated !</li>
+                          <li class="fragment">Cadê os gets e sets ??</li>
+                          <li class="fragment">Não temos sobrecarga de métodos... não é necessário</li>
+                          <li class="fragment">Não temos generic... Python é naturalmente generic</li>
+                      </ul>
+                  </section>
+                  <section>
+                      <h2>Classe Pessoa</h2>
+
+                      <pre><code data-code="./exemplos/pessoa.py" data-trim></code></pre>
+                  </section>
+                  <section>
+                      <h2>Classe Pessoa+</h2>
+
+                      <pre><code data-code="./exemplos/pessoa_plus.py" data-trim></code></pre>
+                  </section>
                 </section>
 
                 <section>
@@ -212,17 +230,13 @@
                     <ul>
                         <li>Exceções são classes</li>
                         <li class="fragment">try...except...finally</li>
+                        <li class="fragment">raise</li>
                     </ul>
                 </section>
 
                 <section>
-                    <h2>Obrigado !</h2>
-                    <p>Juracy Filho</p>
-                </section>
-
-                <section>
                   <section>
-                      <h2>Apêndice A - Exemplos possíveis</h2>
+                      <h2>Apêndice A - Alguns exemplos</h2>
 
                       <ul>
                         <li>Equação de segundo grau</li>
@@ -250,14 +264,21 @@
                 </section>
 
                 <section>
-                    <h2>Apêndice B - Fun</h2>
+                  <section>
+                      <h2>Apêndice B - Just for Fun</h2>
 
-                    <ul>
-                      <li>a,b = 2,3</li>
-                      <li class="fragment">a,b = b,a</li>
-                      <li class="fragment">2 < x < 4</li>
-                      <li class="fragment">Baterias inclusas</li>
-                    </ul>
+                      <ul>
+                        <li>a,b = 2,3</li>
+                        <li class="fragment">a,b = b,a</li>
+                        <li class="fragment">2 < x < 4</li>
+                        <li class="fragment">Baterias inclusas</li>
+                      </ul>
+                  </section>
+                  <section>
+                      <h2>Sobrecarga de Operadores</h2>
+
+                      <pre><code data-code="./exemplos/overload.py" data-trim></code></pre>
+                  </section>
                 </section>
 
                 <section>
@@ -274,13 +295,23 @@
                 </section>
 
                 <section>
-                    <h2>Apêndice D - Links, Documentação e materiais diversos</h2>
+                    <h2>Apêndice D - Melhorar a Ofidioglossia</h2>
 
                     <ul>
                       <li><a href="https://github.com/vinta/awesome-python">Awesome Python</a></li>
+                      <li><a href="http://wiki.python.org.br">Python Brasil</a></li>
                       <li><a href="http://wiki.python.org.br/DocumentacaoPython">Documentos diversos</a></li>
                     </ul>
                 </section>
+
+                <section>
+                    <h2>Obrigado !</h2>
+
+                    <p style="margin-top: 150px; text-align: right">Apresentação disponível no <a href="https://github.com/juracy/curso-python">GitHub</a></p>
+                    <p style="text-align: right">Juracy Filho</p>
+                    <p style="text-align: right">Twitter: @juracy_filho</p>
+                </section>
+
             </div>
         </div>
 
